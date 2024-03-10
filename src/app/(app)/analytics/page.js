@@ -62,9 +62,9 @@ export default async function AnalyticsPage() {
       </SectionBox>
       <SectionBox>
         <h2 className="text-xl mb-6 text-center">Clicks</h2>
-        {page.links.map((link, key) => (
+        {page.links.map((link) => (
           <div
-            key={key}
+            key={link.title}
             className="md:flex gap-4 items-center border-t border-gray-200 py-4"
           >
             <div className="text-blue-500 pl-4">
